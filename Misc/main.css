@@ -1,3 +1,13 @@
+ul{
+
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+li{
+margin: 20px;
+}
+
 header{
     background-color: blue;
     height: 12%;
@@ -43,16 +53,16 @@ body{
     background-color:grey;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 8% 12% 20% 20% 20% 20%;
+    grid-template-rows: 5% 15% 20% 20% 20% 20%;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-areas: 
     "bilder"
-    "bilder" 
-    "bilder"
-    "bilder"
-    "bilder"
-    "bilder";
+    "bilder2" 
+    "bilder3"
+    "bilder4"
+    "bilder5"
+    "bilder6";
     
 }
 
@@ -61,19 +71,82 @@ body{
 .bilder{
     grid-area: bilder;
     background-color: chartreuse;
+    
+}
+
+.bilder2{
+    grid-area: bilder2;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.bilder3{
+    grid-area: bilder3;
+    background-color: chartreuse;
+}
+
+.bilder4{
+    grid-area: bilder4;
+    background-color: chartreuse;
+}
+
+.bilder5{
+    grid-area: bilder5;
+    background-color: chartreuse;
+}
+
+.bilder6{
+    grid-area: bilder6;
+    background-color: chartreuse;
+}
+
+
+.ommig{
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
 }
 
 .content{
     background-color: beige;
     height: 50px;
     width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
+.overtext{
+    background-color:hotpink;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 
-#con1{
-    background-color: black;
-    
+
+
+
+}
+
+#con2{
+     
+    height: 80px;
+    width: 80px;
+    background-color: black; 
+    margin-left: 40px;
+
+
+}
+
+#con3{
+
 }
 
 
