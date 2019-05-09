@@ -1,0 +1,339 @@
+ul{
+
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+li{
+margin: 20px;
+}
+
+header{
+    background-color: rgb(75, 115, 127);
+    height: 12%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-areas:
+    "menyknapp welcome kundvagn";
+    background-image: url(img/Palmer2.jpg);
+    
+}
+
+.kundvagn{
+    grid-area: kundvagn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.kundvagn:visited{
+    font-style: none;
+}
+
+.welcome{
+    grid-area: welcome;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+    
+}
+
+.wrapper{
+    height: 100%;
+    background-color:grey;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 15% 20% 20% 20% 20%;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-areas: 
+    "bilder"
+    "bilder2" 
+    "bilder3"
+    "bilder4"
+    "bilder5"
+    "bilder6";
+    
+}
+
+
+
+.bilder{
+    grid-area: bilder;
+    background-color: chartreuse;
+    
+}
+
+.bilder2{
+    grid-area: bilder2;
+    background-color: rgb(136, 208, 230);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.bilder3{
+    grid-area: bilder3;
+    background-color: rgb(136, 208, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bilder4{
+    grid-area: bilder4;
+    background-image: url(img/Dagligainlägg.jpg);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180%;
+    font-style: oblique;
+    color: whitesmoke;
+}
+
+.bilder5{
+    grid-area: bilder5;
+    background-image: url(img/nyttförsök.jpg);
+}
+
+.bilder6{
+    grid-area: bilder6;
+    background-color: rgb(136, 208, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+}
+
+
+
+.ommig{
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
+    margin: 15px;
+    font-size: 15px;
+}
+
+.content{
+    background-color: beige;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.webtexten{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  
+    font-size: 15px;
+
+
+}
+
+.overtext{
+    background-color:hotpink;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+
+
+
+}
+    .senastefoto{
+        margin-bottom:30%;
+        margin-left: 5%;
+    }
+
+#con2{
+     
+    height: 80%;
+    width: 40%;
+    background-image: url(img/profilbild.jpg); 
+    margin-left: 4%;
+    margin-right: 2%;
+
+
+}
+
+#con3{
+    
+    height: 60%;
+    width: 50%;
+    background-image: url(img/Senastetillfället.jpg); 
+    margin-left: 5%;
+
+
+
+}
+
+#con4{
+    height: 0%;
+    width: 0%;
+
+
+}
+
+#con5{
+    height: 0%;
+    width: 0%;
+
+}
+
+#con6{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(75, 115, 127);
+}
+
+
+
+
+main{
+    grid-area: main;
+    background-color: hotpink;
+    height: 100%vh;
+    overflow:scroll;
+    font-size: 30px
+    
+}
+
+.material-icons{
+    font-size: 55px;
+    margin: 0px;
+    
+    
+}
+
+#vagn{
+    font-size: 55px;
+    margin: 0px;
+}
+
+#back{
+    font-size: 79px;
+}
+
+#open{
+    font-size: 55px;
+    margin: 0px;
+    
+}
+
+.meny{
+    
+    height: 100vh;
+    widows: 80%;
+    background: aqua;
+    position: fixed;
+    top: 0;
+    left: -99%;
+    transition: left 0.3s;
+    background-color: rgb(218, 214, 198);
+    
+    
+}
+.show{
+    position: fixed;
+    top: 0;
+    left: 0 !important;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgb(218, 214, 198);
+}
+
+.menyknapp{
+    grid-area: menyknapp;
+    left: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper2{
+    height: 88%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12% 88%;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-areas:
+    "dinaprodukter dinaprodukter" 
+    "produkt produkt" ; 
+
+
+}
+
+.produkt{
+    grid-area: produkt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.smiley{
+    height: 80%;
+    width: 80%;
+    background-color: crimson;
+
+
+}
+
+
+.dinaprodukter{
+    grid-area: dinaprodukter;
+    background-color: orange;
+}
+
+#bild1{
+    background-image: url(img/rookieflipflops.jpg);
+
+}
+
+#bild2{
+    background-image: url(img/Mammaflipflops.jpg);
+
+}
+
+#bild3{
+    background-image: url(img/Snabbaflipflops.jpg);
+
+}
+
+#bild4{
+    background-color: cyan;
+
+
+}
+
+#bild5{
+    background-image: url(img/bild5.jpg);
+
+
+}
+
