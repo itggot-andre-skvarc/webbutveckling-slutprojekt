@@ -118,6 +118,9 @@ body{
 }
 
 
+.ommigdesktop{
+    display: none;
+}
 
 .ommig{
     display: grid;
@@ -165,6 +168,8 @@ body{
         margin-bottom:30%;
         margin-left: 5%;
     }
+
+    
 
 #con2{
      
@@ -304,6 +309,18 @@ main{
 
 }
 
+.nyabilder{
+    display: none;
+}
+
+.top3{
+
+    display: none;
+}
+
+.gamlabilder{
+    display: none;
+}
 
 .dinaprodukter{
     grid-area: dinaprodukter;
@@ -333,6 +350,125 @@ main{
 
 #bild5{
     background-image: url(img/bild5.jpg);
+
+
+}
+@media (min-device-width: 1000px){
+
+
+    .menyknapp{
+        display: none;
+    }
+
+    .wrapper{
+        height: 100%;
+        background-color:grey;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 10% 40% 30% 0% 15%;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-areas: 
+        "bilder"
+        "bilder2" 
+        "bilder3"
+        "bilder4"
+        "bilder5"
+        "bilder6";
+        
+    }
+
+    
+
+    #con2{
+        display: none;
+    }
+
+    .senastefoto{
+        display: none;
+    }
+
+    .ommig{
+        display: none;
+    }
+
+    .bilder2{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-areas:
+        "nyabilder topp3 gamlabilder";
+        
+    }
+        
+        .nyabilder{
+                display: block;
+                grid-area: nyabilder;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 155%;
+                border: solid 2px black;
+                height: 96%;
+            }
+
+    .top3{
+
+        display: block;
+        grid-area: topp3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 155%;
+        border: solid 2px black;
+        height: 96%;
+            
+    }
+
+    .gamlabilder{
+        display: block;
+        grid-area: gamlabilder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 155%;
+        border: solid 2px black;
+        height: 96%;
+            
+    }
+
+    .bilder3{
+        grid-area: bilder3;
+        background-color: rgb(136, 208, 230);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    #con3{
+
+        height: 80%;
+        width: 15%;
+        background-image: url(../Misc/img/jagdesktop.jpg); 
+        
+
+    }
+
+
+    .ommigdesktop{
+
+        display: block;
+        display: grid;
+        justify-content: center;
+        align-content: flex-end;
+        margin: 15px;
+        font-size: 150%;
+
+    }
 
 
 }
